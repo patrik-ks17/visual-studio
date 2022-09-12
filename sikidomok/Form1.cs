@@ -83,6 +83,10 @@ namespace sikidomok
         private void num_kor_t_ValueChanged(object sender, EventArgs e)
         {
             decimal t = num_kor_t.Value;
+            decimal r = (decimal)Math.Sqrt((double)t / Math.PI);
+            decimal k = 2 * r * (decimal)Math.PI;
+            num_kor_r.Value = r;
+            num_kor_k.Value = k;
         }
     }
 }
